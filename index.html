@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bollería · Fichas técnicas</title>
+<meta name="description" content="Recetario interactivo con las fichas técnicas de Bollería (PGG1102), Duoc UC.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-slug="" style="">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-dot" aria-hidden="true">🥐</span>Bollería</a>
+    <ul class="nav-links"><li><a href="index.html" aria-current=page>Inicio</a></li><li><a href="index.html#areas">Áreas</a></li><li><a href="index.html#recetario">Recetas</a></li></ul>
+    <div class="nav-ext"><a class="cocina" href="https://cgutierrezpoza.github.io/Cocina/" data-enlace="cocina">🍳 <span class="txt">Cocina</span></a><a class="salsas" href="https://cgutierrezpoza.github.io/Salsas/" data-enlace="salsas">🥣 <span class="txt">Salsas</span></a><a class="panaderia" href="https://cgutierrezpoza.github.io/panaderia/" data-enlace="panaderia">🥖 <span class="txt">Panadería</span></a></div>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Escuela de Gastronomía · Duoc UC sede San Andrés Concepción</span>
+      <h1>Fichas técnicas de <em>bollería</em></h1>
+      <p class="lead">Las 28 preparaciones de la asignatura de Bollería convertidas en fichas interactivas: multiplica la receta, revisa el porcentaje panadero y sigue cada paso del proceso.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#areas">Explorar las áreas →</a>
+        <button class="btn btn-soft" id="random" type="button">🎲 Receta al azar</button>
+      </div>
+      <div class="hero-stats">
+        <div><b>5</b><span>áreas</span></div>
+        <div><b>28</b><span>recetas</span></div>
+        <div><b>71</b><span>productos</span></div>
+        <div class="visit-stat" id="visitas" data-contador="bolleria-duocuc-sanandres/visitas" hidden><b id="visitas-num">0</b><span>personas han visitado</span></div>
+      </div>
+    </div>
+    <div class="hero-art"><a class="hero-card c1" href="recetas/croissant.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Croissant%2C_whole.jpg?width=700" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/croissant.svg'"><span>Croissant</span></a><a class="hero-card c2" href="recetas/rollos-de-canela.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cinnamon_Roll.jpg?width=700" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/rollos-de-canela.svg'"><span>Rollos de canela</span></a><a class="hero-card c3" href="recetas/berlines-fritos.html"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Berliner_Pfannkuchen_5.jpg?width=700" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/berlines-fritos.svg'"><span>Berlines fritos</span></a></div>
+  </div>
+</section>
+
+<section class="section" id="presentacion" style="padding-top:40px">
+  <div class="wrap intro-grid">
+    <div class="intro-text reveal">
+      <span class="eyebrow">Presentación</span>
+      <h2>Masas dulces, fritas y de hoja</h2>
+      <p>Cada ficha técnica reúne lo necesario para producir una pieza de bollería de forma estandarizada: su argumentación comercial y técnica, la categoría, el rendimiento, los productos con sus cantidades y el proceso paso a paso, con sus puntos críticos.</p>
+      <p>Usa el multiplicador para escalar la receta (½×, 2×, 3×) y el botón de porcentaje panadero para ver cada producto de la masa en relación a la harina (= 100 %).</p>
+      <blockquote class="quote">Antes de empezar: desinfectar y limpiar el área de trabajo, repasar platos, disponer productos y materiales de preparación, cocción y montaje. Organizar todo.</blockquote>
+    </div>
+    <div>
+      <h3 class="intro-sub reveal">Cuatro sitios, una cocina</h3>
+      <div class="sites">
+        <a class="site-card reveal" href="https://cgutierrezpoza.github.io/Cocina/" data-enlace="cocina" style="background:#FFDCCB"><span class="ico">🍳</span><span><h3>Cocina</h3><p>Fichas técnicas de Cocina Básica: entradas, fondos, sopas, pastas, carnes y más.</p></span></a>
+        <a class="site-card reveal" href="https://cgutierrezpoza.github.io/Salsas/" data-enlace="salsas" style="background:#E7DFFA"><span class="ico">🥣</span><span><h3>Salsas</h3><p>Salsas madre y derivadas del manual de Cocina Básica.</p></span></a>
+        <a class="site-card reveal" href="https://cgutierrezpoza.github.io/panaderia/" data-enlace="panaderia" style="background:#FFE3C8"><span class="ico">🥖</span><span><h3>Panadería</h3><p>Panes chilenos, masas francesas, integrales, italianas y de masa madre.</p></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="areas">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Menú</span><h2>Áreas de la bollería</h2>
+      <p>Elige un área para ver sus preparaciones.</p></div>
+    <div class="areas-grid"><a class="area-card reveal" href="areas/masas-dulces.html" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 01</span>
+  <h3>Masas dulces de levadura</h3>
+  <p>Panes dulces enriquecidos con mantequilla, huevo y leche: brioche, trenza, savarin, rollos de canela, babka y sus preparaciones.</p>
+  <span class="count">8 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hefeteig_Osterhase.JPG?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/conejos.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Berliner_%28pastry%29.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/berlines-horneados.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Brioche_with_sugar_Aux_Merveilleux_de_Fred.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/brioche.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hefezopf-5er.JPG?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/trenza-con-crema-pastelera.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Savarine.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/savarin.svg'"></div>
+</a><a class="area-card reveal" href="areas/masas-fritas.html" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 02</span>
+  <h3>Masas fritas</h3>
+  <p>Bollería de fritura honda: berlines, donuts, calzones rotos, churros, picarones con chancaca y buñuelos.</p>
+  <span class="count">6 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Berliner_Pfannkuchen_5.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/berlines-fritos.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Glazed-Donut.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/donuts.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calzones_Rotos.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/calzones-rotos.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Churros_Madrid.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/churros.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Picarones_reci%C3%A9n_hechos.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/picarones-con-chancaca.svg'"></div>
+</a><a class="area-card reveal" href="areas/croissanteria.html" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 03</span>
+  <h3>Croissantería</h3>
+  <p>Masa de hoja fermentada: empaste, vueltas simples y dobles y formado de croissants, pain au chocolat y cruffins.</p>
+  <span class="count">5 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pain_au_chocolat_Luc_Viatour.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pain-au-chocolat.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Croissant%2C_whole.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/croissant.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Croissant_In_Austria.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/croissant-bicolor.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_Chocolate_Milk_and_Almond_Croissant.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/croissant-relleno.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cruffin.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/brioche-hojaldrado-cruffin.svg'"></div>
+</a><a class="area-card reveal" href="areas/hojaldradas.html" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 04</span>
+  <h3>Masas hojaldradas</h3>
+  <p>Masas danesas, palmeritas, carré de manzana y New York rolls: láminas, rellenos y terminaciones.</p>
+  <span class="count">4 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Medialunas_argentinas.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/masas-danesas-medialunas-y-facturas.svg'"><img src="assets/img/recetas/palmeritas-ilustracion.svg" alt="" loading="lazy"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bon_Appetit_Apple_Danish_%2815959860776%29.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/carre-de-manzana.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/20231022_101836_Croissant_supr%C3%AAme.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/new-york-rolls.svg'"></div>
+</a><a class="area-card reveal" href="areas/cremas-rellenos.html" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <span class="arrow" aria-hidden="true">→</span>
+  <span class="eyebrow">Área 05</span>
+  <h3>Cremas, rellenos y glaseados</h3>
+  <p>Las preparaciones que completan la bollería: crema pastelera, ganache, compota de manzana y glaseado real.</p>
+  <span class="count">5 recetas</span>
+  <div class="area-thumbs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pastry_cream.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/crema-pastelera.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Making_Royal_icing.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/glaseado-real.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/00_Ganach%C3%A9_de_chocolate.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/ganache-de-chocolate-para-donuts.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burst_custard_donut_on_tray.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/crema-pastelera-para-donuts.svg'"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Applesauce.jpg?width=200" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/compota-de-manzana-para-donuts.svg'"></div>
+</a></div>
+  </div>
+</section>
+
+<section class="section" id="recetario">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Recetario</span><h2>Todas las recetas</h2>
+      <p>Filtra por área o busca por nombre o ingrediente (prueba con “canela”, “chancaca” o “praliné”).</p></div>
+    <div class="toolbar">
+      <div class="tabs" role="toolbar" aria-label="Filtrar por área"><button class="tab" data-area="todas" aria-pressed="true">Todas</button><button class="tab" data-area="masas-dulces" aria-pressed="false" style="--tab-acc:#C9653F"><span class="chip-dot"></span>Masas dulces</button><button class="tab" data-area="masas-fritas" aria-pressed="false" style="--tab-acc:#B8901A"><span class="chip-dot"></span>Fritas</button><button class="tab" data-area="croissanteria" aria-pressed="false" style="--tab-acc:#3F82BC"><span class="chip-dot"></span>Croissants</button><button class="tab" data-area="hojaldradas" aria-pressed="false" style="--tab-acc:#7A62C6"><span class="chip-dot"></span>Hojaldradas</button><button class="tab" data-area="cremas-rellenos" aria-pressed="false" style="--tab-acc:#C95C7C"><span class="chip-dot"></span>Cremas y rellenos</button></div>
+      <label class="search"><span class="sr-only">Buscar receta</span><input id="q" type="search" placeholder="Buscar receta o ingrediente…"></label>
+    </div>
+    <div class="recipes" id="recipes"><a class="r-card reveal" href="recetas/conejos.html" data-area="masas-dulces" data-search="Conejos Pan dulce con forma de conejo decorados con merengue Masas dulces de levadura Masas dulces de levadura Levadura seca Harina sin polvos Azúcar Sal Esencia de vainilla Zeste de naranja Canela Clavo de olor Estrella de anís Leche Huevos Yemas Mantequilla Clara de huevo" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hefeteig_Osterhase.JPG?width=600" alt="Foto de Conejos" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/conejos.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Masas dulces</span>
+    <h3>Conejos</h3>
+    <p class="sub">Pan dulce con forma de conejo decorados con merengue</p>
+    <div class="meta"><span>🥖 25 unidades de 40 g</span><span>📝 15 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/berlines-horneados.html" data-area="masas-dulces" data-search="Berlines horneados Dulce tradicional de Alemania, Austria y Europa central Masa dulce de levadura Masas dulces de levadura Azúcar Sal Harina Levadura fresca Mantequilla sin sal Leche Huevo Yema de huevo" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Berliner_%28pastry%29.jpg?width=600" alt="Foto de Berlines horneados" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/berlines-horneados.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Masas dulces</span>
+    <h3>Berlines horneados</h3>
+    <p class="sub">Dulce tradicional de Alemania, Austria y Europa central</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 9 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/brioche.html" data-area="masas-dulces" data-search="Brioche Pan de textura suave y esponjosa Masas de levadura Masas dulces de levadura Azúcar Sal Harina Levadura fresca Zeste limón Mantequilla sin sal Leche Huevos Yemas" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Brioche_with_sugar_Aux_Merveilleux_de_Fred.jpg?width=600" alt="Foto de Brioche" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/brioche.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Masas dulces</span>
+    <h3>Brioche</h3>
+    <p class="sub">Pan de textura suave y esponjosa</p>
+    <div class="meta"><span>🥖 10 unidades</span><span>📝 5 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/trenza-con-crema-pastelera.html" data-area="masas-dulces" data-search="Trenza con crema pastelera Masa dulce fermentada con crema pastelera Masa dulce fermentada Masas dulces de levadura Harina Azúcar Mantequilla Levadura fresca Sal Maicena Huevo Yema Leche Zeste de naranja Zeste de limón" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hefezopf-5er.JPG?width=600" alt="Foto de Trenza con crema pastelera" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/trenza-con-crema-pastelera.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Masas dulces</span>
+    <h3>Trenza con crema pastelera</h3>
+    <p class="sub">Masa dulce fermentada con crema pastelera</p>
+    <div class="meta"><span>🥖 8 porciones</span><span>📝 15 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/savarin.html" data-area="masas-dulces" data-search="Savarin Masa con pasas y leve sabor a Ron Masas dulces de levadura Masas dulces de levadura Harina Levadura fresca Sal Azúcar flor Ron añejo Pasas corinto Huevos Mantequilla Leche o agua" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Savarine.jpg?width=600" alt="Foto de Savarin" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/savarin.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Masas dulces</span>
+    <h3>Savarin</h3>
+    <p class="sub">Masa con pasas y leve sabor a Ron</p>
+    <div class="meta"><span>🥖 16 unidades</span><span>📝 12 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/rollos-de-canela.html" data-area="masas-dulces" data-search="Rollos de canela Rollo de masa con relleno de canela y mantequilla Masas dulces de levadura Masas dulces de levadura Harina Azúcar Sal Levadura seca Agua Azúcar rubia Canela Azúcar flor Leche Mantequilla Huevo Queso crema" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cinnamon_Roll.jpg?width=600" alt="Foto de Rollos de canela" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/rollos-de-canela.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Masas dulces</span>
+    <h3>Rollos de canela</h3>
+    <p class="sub">Rollo de masa con relleno de canela y mantequilla</p>
+    <div class="meta"><span>🥖 8 rollos</span><span>📝 11 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/tostadas-francesas.html" data-area="masas-dulces" data-search="Tostadas francesas Preparación dulce en base a pan brioche Preparaciones dulces Masas dulces de levadura Azúcar Sal Canela en polvo Harina Levadura Fresca Leche Huevos Mantequilla Yemas Zeste de naranja Zeste de limón" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/French_Toast_P1170192.JPG?width=600" alt="Foto de Tostadas francesas" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/tostadas-francesas.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Masas dulces</span>
+    <h3>Tostadas francesas</h3>
+    <p class="sub">Preparación dulce en base a pan brioche</p>
+    <div class="meta"><span>🥖 10 porciones</span><span>📝 8 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/babka-de-chocolate-y-canela.html" data-area="masas-dulces" data-search="Babka de chocolate y canela Pan dulce con levadura, su forma asimila un cordón Masas dulces de levadura Masas dulces de levadura Harina de fuerza Azúcar Sal Levadura fresca Cacao en polvo Canela Chips de chocolate Huevos Leche Mantequilla" style="--area-bg:#FFDCCB;--accent:#C9653F">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_Babka_-_31706252800.jpg?width=600" alt="Foto de Babka de chocolate y canela" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/babka-de-chocolate-y-canela.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Masas dulces</span>
+    <h3>Babka de chocolate y canela</h3>
+    <p class="sub">Pan dulce con levadura, su forma asimila un cordón</p>
+    <div class="meta"><span>🥖 2 babkas (moldes)</span><span>📝 12 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/berlines-fritos.html" data-area="masas-fritas" data-search="Berlines fritos Dulce tradicional de Alemania, Austria y Europa central Masa dulce de levadura Masas fritas Azúcar Sal Harina Levadura fresca Aceite para freir Mantequilla Leche Huevo Yema de huevo" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Berliner_Pfannkuchen_5.jpg?width=600" alt="Foto de Berlines fritos" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/berlines-fritos.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fritas</span>
+    <h3>Berlines fritos</h3>
+    <p class="sub">Dulce tradicional de Alemania, Austria y Europa central</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 9 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/donuts.html" data-area="masas-fritas" data-search="Donuts Masa con un agujero en centro, puede ser rellena, glaseada y decorada Masa dulce de levadura Masas fritas Azúcar Sal Harina Levadura fresca Mantequilla sin sal Leche Huevo Yema de huevo" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Glazed-Donut.jpg?width=600" alt="Foto de Donuts" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/donuts.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fritas</span>
+    <h3>Donuts</h3>
+    <p class="sub">Masa con un agujero en centro, puede ser rellena, glaseada y decorada</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 9 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/calzones-rotos.html" data-area="masas-fritas" data-search="Calzones rotos Masa dulce leudada Masa dulce de levadura Masas fritas Harina Azúcar flor Sal Pisco Levadura fresca Zeste de limón Azúcar flor para decorar Mantequilla sin sal Huevo" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calzones_Rotos.jpg?width=600" alt="Foto de Calzones rotos" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/calzones-rotos.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fritas</span>
+    <h3>Calzones rotos</h3>
+    <p class="sub">Masa dulce leudada</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 7 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/churros.html" data-area="masas-fritas" data-search="Churros Masa dulce frita alargada Masas fritas Masas fritas Harina Azúcar Leche Mantequilla Huevos" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Churros_Madrid.jpg?width=600" alt="Foto de Churros" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/churros.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fritas</span>
+    <h3>Churros</h3>
+    <p class="sub">Masa dulce frita alargada</p>
+    <div class="meta"><span>🥖 8 porciones</span><span>📝 5 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/picarones-con-chancaca.html" data-area="masas-fritas" data-search="Picarones con chancaca Masa dulce con levadura y frita Masa dulce fermentada Masas fritas Anís Levadura fresca Azúcar Harina Sal Agua Chancaca Azúcar rubia Canela Clavo de olor Aceite para freir Zapallo" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Picarones_reci%C3%A9n_hechos.jpg?width=600" alt="Foto de Picarones con chancaca" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/picarones-con-chancaca.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fritas</span>
+    <h3>Picarones con chancaca</h3>
+    <p class="sub">Masa dulce con levadura y frita</p>
+    <div class="meta"><span>🥖 8 porciones</span><span>📝 7 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/bunuelos.html" data-area="masas-fritas" data-search="Buñuelos Masa dulce frita Masas dulces con levadura Masas fritas Azúcar flor Sal Harina Levadura seca Ron Mantequilla sin sal Huevo Leche Zeste de limón" style="--area-bg:#FFF0B5;--accent:#B8901A">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bu%C3%B1uelos.JPG?width=600" alt="Foto de Buñuelos" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/bunuelos.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Fritas</span>
+    <h3>Buñuelos</h3>
+    <p class="sub">Masa dulce frita</p>
+    <div class="meta"><span>🥖 10 porciones</span><span>📝 8 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/pain-au-chocolat.html" data-area="croissanteria" data-search="Pain au chocolat Masa hojaldre rellena de chocolate Masa de hoja fermentada Croissantería Harina panadera Azúcar granulada Sal Levadura fresca Chocolate sticks Leche Mantequilla sin sal Mantequilla para empastar 82% materia grasa Huevo Crema" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pain_au_chocolat_Luc_Viatour.jpg?width=600" alt="Foto de Pain au chocolat" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/pain-au-chocolat.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Croissants</span>
+    <h3>Pain au chocolat</h3>
+    <p class="sub">Masa hojaldre rellena de chocolate</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 10 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/croissant.html" data-area="croissanteria" data-search="Croissant Masa elaborada en base a masa de hojaldre Masa de hoja fermentada Croissantería Harina panadera Azúcar granulada Sal Levadura fresca Leche Mantequilla sin sal Mantequilla para empastar 82% materia grasa" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Croissant%2C_whole.jpg?width=600" alt="Foto de Croissant" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/croissant.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Croissants</span>
+    <h3>Croissant</h3>
+    <p class="sub">Masa elaborada en base a masa de hojaldre</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 8 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/croissant-bicolor.html" data-area="croissanteria" data-search="Croissant bicolor Masa elaborada en base a masa de hojaldre Masa de hoja fermentada Croissantería Harina panadera Azúcar granulada Sal Levadura fresca Colorante en gel Leche Mantequilla sin sal Mantequilla para empastar 82% de materia grasa" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Croissant_In_Austria.jpg?width=600" alt="Foto de Croissant bicolor" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/croissant-bicolor.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Croissants</span>
+    <h3>Croissant bicolor</h3>
+    <p class="sub">Masa elaborada en base a masa de hojaldre</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 11 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/croissant-relleno.html" data-area="croissanteria" data-search="Croissant relleno Masa elaborada en base a masa hojaldre Masa de hoja fermentada Croissantería Harina panadera Azúcar granulada Sal Levadura fresca Chocolate amargo 55% Chocolate leche 40% Praliné de almendra Leche Mantequilla sin sal Mantequilla para empastar 82% materia grasa" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_Chocolate_Milk_and_Almond_Croissant.jpg?width=600" alt="Foto de Croissant relleno" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/croissant-relleno.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Croissants</span>
+    <h3>Croissant relleno</h3>
+    <p class="sub">Masa elaborada en base a masa hojaldre</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 12 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/brioche-hojaldrado-cruffin.html" data-area="croissanteria" data-search="Brioche hojaldrado (cruffin) Cruffin: mezcla entre un brioche hojaldrado y un muffin, relleno de toffee salado. Masa de hoja fermentada Croissantería Azúcar granulada Sal Harina panadera Levadura fresca Agua Glucosa Chocolate de leche callebaut Sal gruesa Leche Margarina hojaldre 82% materia grasa Huevos Crema de leche Mantequilla sin sal" style="--area-bg:#D4EAFA;--accent:#3F82BC">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cruffin.jpg?width=600" alt="Foto de Brioche hojaldrado (cruffin)" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/brioche-hojaldrado-cruffin.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Croissants</span>
+    <h3>Brioche hojaldrado (cruffin)</h3>
+    <p class="sub">Cruffin: mezcla entre un brioche hojaldrado y un muffin, relleno de toffee salado.</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 20 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/masas-danesas-medialunas-y-facturas.html" data-area="hojaldradas" data-search="Masas danesas (medialunas y facturas) Medialunas y facturas de masa danesa, con almíbar, crema pastelera y rellenos dulces. Masas hojaldradas Masas hojaldradas Harina panadera Azúcar granulada Sal Miel Esencia de vainilla Levadura fresca Agua Manjar Maicena Huevos Leche Mantequilla para empaste 82% materia grasa Yemas Zeste de naranja Dulce de membrillo Frutillas" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Medialunas_argentinas.jpg?width=600" alt="Foto de Masas danesas (medialunas y facturas)" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/masas-danesas-medialunas-y-facturas.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Hojaldradas</span>
+    <h3>Masas danesas (medialunas y facturas)</h3>
+    <p class="sub">Medialunas y facturas de masa danesa, con almíbar, crema pastelera y rellenos dulces.</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 19 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/palmeritas.html" data-area="hojaldradas" data-search="Palmeritas Masa hojaldrada cubierta de azúcar Masa de hoja Masas hojaldradas Harina Sal Hielo Agua Vinagre de vino blanco Azúcar granulada Mantequilla Mantequilla para empastar Mantequilla fundida" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="assets/img/recetas/palmeritas-ilustracion.svg" alt="Foto de Palmeritas" loading="lazy"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Hojaldradas</span>
+    <h3>Palmeritas</h3>
+    <p class="sub">Masa hojaldrada cubierta de azúcar</p>
+    <div class="meta"><span>🥖 12 unidades</span><span>📝 6 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/carre-de-manzana.html" data-area="hojaldradas" data-search="Carré de manzana Masa de hoja con relleno de manzana Masa de hoja fermentada Masas hojaldradas Harina panadera Azúcar granulada Sal Levadura fresca Leche Mantequilla sin sal Mantequilla para empastar Manzana" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bon_Appetit_Apple_Danish_%2815959860776%29.jpg?width=600" alt="Foto de Carré de manzana" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/carre-de-manzana.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Hojaldradas</span>
+    <h3>Carré de manzana</h3>
+    <p class="sub">Masa de hoja con relleno de manzana</p>
+    <div class="meta"><span>🥖 8 porciones</span><span>📝 8 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/new-york-rolls.html" data-area="hojaldradas" data-search="New York rolls Rollo de masa hojaldrada originario de new york Masas hojaldradas Masas hojaldradas Harina panadera Azúcar granulada Sal Levadura fresca Chocolate amargo 56% Azúcar flor Leche Mantequilla sin sal Mantequilla para empastar Crema de leche" style="--area-bg:#E7DFFA;--accent:#7A62C6">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/20231022_101836_Croissant_supr%C3%AAme.jpg?width=600" alt="Foto de New York rolls" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/new-york-rolls.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Hojaldradas</span>
+    <h3>New York rolls</h3>
+    <p class="sub">Rollo de masa hojaldrada originario de new york</p>
+    <div class="meta"><span>🥖 8 unidades</span><span>📝 12 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/crema-pastelera.html" data-area="cremas-rellenos" data-search="Crema pastelera Crema francesa utilizada en repostería Cremas Cremas, rellenos y glaseados Azúcar Maicena Leche Yema de huevo" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pastry_cream.jpg?width=600" alt="Foto de Crema pastelera" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/crema-pastelera.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Cremas y rellenos</span>
+    <h3>Crema pastelera</h3>
+    <p class="sub">Crema francesa utilizada en repostería</p>
+    <div class="meta"><span>🥖 700 g</span><span>📝 8 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/glaseado-real.html" data-area="cremas-rellenos" data-search="Glaseado real Glaseado para bañar productos dulces Glaseados Cremas, rellenos y glaseados Azúcar flor Jugo de limón Clara de huevo" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Making_Royal_icing.jpg?width=600" alt="Foto de Glaseado real" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/glaseado-real.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Cremas y rellenos</span>
+    <h3>Glaseado real</h3>
+    <p class="sub">Glaseado para bañar productos dulces</p>
+    <div class="meta"><span>🥖 460 g aprox.</span><span>📝 3 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/ganache-de-chocolate-para-donuts.html" data-area="cremas-rellenos" data-search="Ganache de chocolate para donuts Ganache de chocolate Cremas Cremas, rellenos y glaseados Chocolate amargo Miel Crema de leche" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/00_Ganach%C3%A9_de_chocolate.jpg?width=600" alt="Foto de Ganache de chocolate para donuts" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/ganache-de-chocolate-para-donuts.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Cremas y rellenos</span>
+    <h3>Ganache de chocolate para donuts</h3>
+    <p class="sub">Ganache de chocolate</p>
+    <div class="meta"><span>🥖 400 g</span><span>📝 4 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/crema-pastelera-para-donuts.html" data-area="cremas-rellenos" data-search="Crema pastelera para donuts Crema francesa utilizada en repostería Cremas Cremas, rellenos y glaseados Azúcar Maicena Leche Yema" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Burst_custard_donut_on_tray.jpg?width=600" alt="Foto de Crema pastelera para donuts" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/crema-pastelera-para-donuts.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Cremas y rellenos</span>
+    <h3>Crema pastelera para donuts</h3>
+    <p class="sub">Crema francesa utilizada en repostería</p>
+    <div class="meta"><span>🥖 350 g</span><span>📝 8 pasos</span></div>
+  </div>
+</a><a class="r-card reveal" href="recetas/compota-de-manzana-para-donuts.html" data-area="cremas-rellenos" data-search="Compota de manzana para donuts Pasta de manzana Rellenos Cremas, rellenos y glaseados Manzana Azúcar Jugo de limón natural Canela en polvo Ralladura de naranja" style="--area-bg:#FBDDE4;--accent:#C95C7C">
+  <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Applesauce.jpg?width=600" alt="Foto de Compota de manzana para donuts" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='assets/img/recetas/compota-de-manzana-para-donuts.svg'"></div>
+  <div class="body">
+    <span class="chip"><span class="chip-dot"></span>Cremas y rellenos</span>
+    <h3>Compota de manzana para donuts</h3>
+    <p class="sub">Pasta de manzana</p>
+    <div class="meta"><span>🥖 600 g</span><span>📝 4 pasos</span></div>
+  </div>
+</a></div>
+    <p class="empty">No hay recetas que coincidan. Prueba con otra palabra 🥐</p>
+  </div>
+</section>
+
+<section class="section" id="proceso">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Interactivo</span><h2>El laminado paso a paso</h2>
+      <p>Las seis etapas de la masa de hoja fermentada, según las fichas de croissant, pain au chocolat y New York rolls. Toca cada una para ver qué ocurre y qué cuidar.</p></div>
+    <div class="doneness proceso reveal" role="tablist"><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#FFF0B5">🥣</i>1. Masa base<small>Amasado + frío</small></button><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#FFDCCB">🧈</i>2. Empaste<small>Mantequilla 82 % m.g.</small></button><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#E4F2D2">📄</i>3. Vuelta simple<small>3 capas · 30 min en frío</small></button><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#D4EAFA">📖</i>4. Vuelta doble<small>4 capas · 30 min en frío</small></button><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#E7DFFA">📐</i>5. Laminado y formado<small>4 a 5 mm</small></button><button class="dn-btn" role="tab" aria-selected="false"><i style="background:#FBDDE4">🔥</i>6. Fermentación y horneado<small>40 a 120 min · 175 °C</small></button></div>
+    <div class="dn-panel reveal"><div class="steak pan"></div><div class="dn-info"></div></div>
+    <script type="application/json" id="doneness-data" data-inicio="0">[{"nombre": "Masa base", "emoji": "🥣", "ico": "⏱️", "temp": "Amasado + frío", "color": "#FFF0B5", "texto": "Se forma una masa homogénea y elástica con todos los ingredientes menos la mantequilla de empaste, y se deja reposar en frío.", "tip": "La masa no debe superar los 20 °C mientras se trabaja."}, {"nombre": "Empaste", "emoji": "🧈", "ico": "🧈", "temp": "Mantequilla 82 % m.g.", "color": "#FFDCCB", "texto": "La mantequilla de empaste se golpea con uslero hasta que esté maleable y se envuelve en la masa estirada.", "tip": "La mantequilla debe tener la misma consistencia que la masa: ni dura ni blanda."}, {"nombre": "Vuelta simple", "emoji": "📄", "ico": "❄️", "temp": "3 capas · 30 min en frío", "color": "#E4F2D2", "texto": "Se estira la masa en un rectángulo y se dobla en tres, como una carta. Luego se refrigera.", "tip": "Respeta los tiempos de reposo en frío entre vueltas."}, {"nombre": "Vuelta doble", "emoji": "📖", "ico": "❄️", "temp": "4 capas · 30 min en frío", "color": "#D4EAFA", "texto": "Los extremos se llevan al centro y se cierra como un libro. Con una simple y una doble la masa queda lista.", "tip": "Estira siempre en la misma dirección para que las capas queden parejas."}, {"nombre": "Laminado y formado", "emoji": "📐", "ico": "📏", "temp": "4 a 5 mm", "color": "#E7DFFA", "texto": "Se lamina la masa y se corta según el producto: triángulos de 36 × 9 cm para croissant, rectángulos de 8 × 13 cm para pain au chocolat.", "tip": "Corta con cuchillo bien afilado para no aplastar las capas."}, {"nombre": "Fermentación y horneado", "emoji": "🔥", "ico": "🌡️", "temp": "40 a 120 min · 175 °C", "color": "#FBDDE4", "texto": "Las piezas fermentan hasta doblar su volumen, se pintan con dora y se hornean a 175 °C por 15 a 20 minutos.", "tip": "Fermenta en un lugar templado, no caliente, para que la mantequilla no se derrita."}]</script>
+  </div>
+</section>
+
+<section class="section" id="glosario">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Glosario</span><h2>Técnicas que aparecen en las fichas</h2>
+      <p>Pasa el cursor (o toca) cada tarjeta para ver su significado.</p></div>
+    <div class="flip-grid"><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--peach)"><small>Técnica</small><b>Empaste</b></div>
+  <div class="flip-face back">Envolver la mantequilla (o margarina) de empaste dentro de la masa base, antes de dar las vueltas.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--butter)"><small>Técnica</small><b>Vuelta simple</b></div>
+  <div class="flip-face back">Doblar la masa estirada en tres partes, como una carta.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--mint)"><small>Técnica</small><b>Vuelta doble</b></div>
+  <div class="flip-face back">Doblar los extremos hacia el centro y luego cerrar como un libro (cuatro capas).</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--sky)"><small>Técnica</small><b>Laminar</b></div>
+  <div class="flip-face back">Estirar la masa de hoja de forma pareja hasta el grosor indicado (4 a 5 mm).</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--lav)"><small>Técnica</small><b>Pomar</b></div>
+  <div class="flip-face back">Ablandar la mantequilla hasta textura de pomada, cremosa y fácil de mezclar.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--rose)"><small>Técnica</small><b>Leudo</b></div>
+  <div class="flip-face back">Levadura hidratada con agua tibia, un poco de azúcar y harina, que se deja activar unos minutos.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--peach)"><small>Técnica</small><b>Desgasificar</b></div>
+  <div class="flip-face back">Presionar suavemente la masa leudada para eliminar el exceso de gas antes de formar.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--butter)"><small>Técnica</small><b>Ovillar</b></div>
+  <div class="flip-face back">Formar bolitas tensas de masa del peso indicado.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--mint)"><small>Técnica</small><b>Dora</b></div>
+  <div class="flip-face back">Mezcla para pintar (huevo o yema con leche o crema) que da brillo y color al hornear.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--sky)"><small>Técnica</small><b>Masa choux</b></div>
+  <div class="flip-face back">Masa escaldada: la harina se cocina en leche y mantequilla y luego se incorporan los huevos (churros).</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--lav)"><small>Técnica</small><b>Merengue suizo</b></div>
+  <div class="flip-face back">Claras y azúcar calentadas a baño maría hasta disolver el azúcar y luego batidas.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--rose)"><small>Técnica</small><b>Zeste</b></div>
+  <div class="flip-face back">Ralladura fina de la piel de cítricos, sin la parte blanca.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--peach)"><small>Técnica</small><b>Encamisar</b></div>
+  <div class="flip-face back">Engrasar y enharinar un molde para que la preparación no se pegue.</div></div></button><button class="flip reveal" type="button"><div class="flip-inner">
+  <div class="flip-face front" style="--fbg:var(--butter)"><small>Técnica</small><b>Fritura honda</b></div>
+  <div class="flip-face back">Cocción sumergida en abundante aceite; en estas fichas, a no más de 160 °C.</div></div></button></div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div><h4>🥐 Bollería · Fichas técnicas</h4>
+      <p>Recetario digital construido a partir de las fichas técnicas de la asignatura de Bollería (PGG1102), Escuela de Gastronomía Duoc UC, sede San Andrés de Concepción.</p>
+      <p><a href="https://cgutierrezpoza.github.io/Cocina/" data-enlace="cocina" style="display:inline;opacity:1">🍳 Cocina</a> &nbsp;·&nbsp; <a href="https://cgutierrezpoza.github.io/Salsas/" data-enlace="salsas" style="display:inline;opacity:1">🥣 Salsas</a> &nbsp;·&nbsp; <a href="https://cgutierrezpoza.github.io/panaderia/" data-enlace="panaderia" style="display:inline;opacity:1">🥖 Panadería</a></p></div>
+    <div><h4>Áreas</h4><a href="areas/masas-dulces.html">Masas dulces de levadura</a><a href="areas/masas-fritas.html">Masas fritas</a><a href="areas/croissanteria.html">Croissantería</a><a href="areas/hojaldradas.html">Masas hojaldradas</a><a href="areas/cremas-rellenos.html">Cremas, rellenos y glaseados</a></div>
+    <div><h4>Explora</h4><a href="index.html#recetario">Todas las recetas</a><a href="index.html#proceso">El laminado paso a paso</a><a href="index.html#glosario">Glosario</a></div>
+    <p class="legal">Contenido de uso educativo. Fotografías referenciales de Wikimedia Commons bajo licencias libres; créditos en cada receta. Página desarrollada por Claudia Gutierrez Poza para la carrera de Gastronomía Duoc UC.</p>
+  </div>
+</footer>
+<button class="to-top" aria-label="Volver arriba">↑</button>
+<script src="assets/js/enlaces.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
